@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.text.Font?>
+
+<BorderPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="444.0" prefWidth="635.0" style="-fx-background-color: #62afb7;" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.calculatorproject.HelloController">
+   <top>
+      <AnchorPane prefHeight="182.0" prefWidth="635.0" BorderPane.alignment="CENTER">
+         <children>
+            <TextField fx:id="firstPolynomialTextField" alignment="CENTER" layoutX="182.0" layoutY="60.0" prefHeight="26.0" prefWidth="270.0" promptText="Introduce the first polynomial" style="-fx-background-color: #ffec47;" />
+            <TextField fx:id="secondPolynomialTextField" alignment="CENTER" layoutX="182.0" layoutY="96.0" prefHeight="26.0" prefWidth="270.0" promptText="Introduce the second polynomial" style="-fx-background-color: #ffec47;" />
+            <Label layoutX="303.0" layoutY="56.0" />
+            <Label alignment="CENTER" layoutX="186.0" layoutY="13.0" prefHeight="43.0" prefWidth="262.0" text="CALCULATOR" textFill="#d9ffea">
+               <font>
+                  <Font size="29.0" />
+               </font>
+            </Label>
+            <ImageView fx:id="bmoImageView" fitHeight="120.0" fitWidth="148.0" layoutX="482.0" layoutY="49.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../../../../../../BMO/bmo.jpg" />
+               </image>
+            </ImageView>
+            <ImageView fx:id="sodaImageView" fitHeight="174.0" fitWidth="146.0" layoutX="23.0" layoutY="49.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../../../../../../BMO/bmosoda.jpg" />
+               </image>
+            </ImageView>
+            <Label layoutX="7.0" layoutY="25.0" prefHeight="18.0" prefWidth="216.0" text="Hi, there! Introduce your polynomials" textFill="#d9ffea" />
+            <Label alignment="CENTER" contentDisplay="CENTER" layoutX="472.0" layoutY="25.0" prefHeight="18.0" prefWidth="153.0" text="And I will do the work" textFill="#d9ffea">
+               <font>
+                  <Font size="13.0" />
+               </font>
+            </Label>
+            <Label layoutX="191.0" layoutY="132.0" text="Note! If a certain coefficient is &quot;1&quot;, then write it! " textFill="#ac0808" />
+            <Label layoutX="169.0" layoutY="150.0" text="Example: Don't write x^5+x^4. Instead, write: 1x^5+1x^4" textFill="#a41d1d" />
+         </children>
+      </AnchorPane>
+   </top>
+   <center>
+      <AnchorPane prefHeight="242.0" prefWidth="635.0" BorderPane.alignment="CENTER">
+         <children>
+            <Button fx:id="addButton" layoutX="42.0" layoutY="212.0" mnemonicParsing="false" onAction="#addButtonOnAction" prefHeight="23.0" prefWidth="46.0" style="-fx-background-color: #f20553;" text="+" />
+            <Button fx:id="minusButton" layoutX="112.0" layoutY="212.0" mnemonicParsing="false" onAction="#minusButtonOnAction" prefHeight="22.0" prefWidth="46.0" style="-fx-background-color: #f20553;" text="-" />
+            <Button fx:id="multiplyButton" layoutX="240.0" layoutY="212.0" mnemonicParsing="false" onAction="#multiplyButtonOnAction" prefHeight="26.0" prefWidth="52.0" style="-fx-background-color: #f20553;" text="x" />
+            <Button fx:id="divideButton" layoutX="306.0" layoutY="213.0" mnemonicParsing="false" onAction="#divideButtonOnAction" prefHeight="26.0" prefWidth="65.0" style="-fx-background-color: #f20553;" text=":" />
+            <Button fx:id="integrateButton" layoutX="429.0" layoutY="212.0" mnemonicParsing="false" onAction="#integrateButtonOnAction" prefHeight="26.0" prefWidth="72.0" style="-fx-background-color: #f20553;" text="∫" />
+            <Button fx:id="deriveButton" layoutX="508.0" layoutY="213.0" mnemonicParsing="false" onAction="#deriveButtonOnAction" prefHeight="26.0" prefWidth="65.0" style="-fx-background-color: #f20553;" text="()'" />
+            <TextField fx:id="resultTextField" alignment="CENTER" layoutX="182.0" layoutY="22.0" prefHeight="26.0" prefWidth="270.0" promptText="Result" style="-fx-background-color: #ffec47;" />
+            <ImageView fitHeight="107.0" fitWidth="160.0" layoutX="22.0" layoutY="100.0" pickOnBounds="true" preserveRatio="true" />
+            <ImageView fx:id="danceImageView" fitHeight="111.0" fitWidth="198.0" layoutX="15.0" layoutY="87.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../../../../../../BMO/bmodance.jpg" />
+               </image>
+            </ImageView>
+            <ImageView fx:id="cryImageView" fitHeight="135.0" fitWidth="144.0" layoutX="239.0" layoutY="63.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../../../../../../BMO/bmocry.jpg" />
+               </image>
+            </ImageView>
+            <ImageView fx:id="stressImageView" fitHeight="118.0" fitWidth="200.0" layoutX="408.0" layoutY="91.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../../../../../../BMO/bmoerror.jpg" />
+               </image>
+            </ImageView>
+         </children>
+      </AnchorPane>
+   </center>
+</BorderPane>
